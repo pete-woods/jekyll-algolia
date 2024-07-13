@@ -17,15 +17,19 @@ Gem::Specification.new do |gem|
   gem.licenses = ['MIT']
 
   # Supported Ruby versions
-  gem.required_ruby_version = '>= 2.3.0'
+  gem.required_ruby_version = '>= 3.3.4'
 
   # Dependencies
+  gem.add_runtime_dependency 'csv', '~> 3.3'
+  gem.add_runtime_dependency 'base64', '~> 0.2'
+  gem.add_runtime_dependency 'mutex_m', '~> 0.2'
+  gem.add_runtime_dependency 'algolia', '~> 2.3'
   gem.add_runtime_dependency 'algolia_html_extractor', '~> 2.6'
-  gem.add_runtime_dependency 'algoliasearch', '~> 1.26'
+  gem.add_runtime_dependency 'algoliasearch', '~> 1.27'
   gem.add_runtime_dependency 'filesize', '~> 0.1'
-  gem.add_runtime_dependency 'jekyll', '>= 3.6', '< 5.0'
+  gem.add_runtime_dependency 'jekyll', '>= 4.3', '< 5.0'
   gem.add_runtime_dependency 'json', '~> 2.0'
-  gem.add_runtime_dependency 'nokogiri', '~> 1.6'
+  gem.add_runtime_dependency 'nokogiri', '~> 1.16'
   gem.add_runtime_dependency 'progressbar', '~> 1.9'
   gem.add_runtime_dependency 'verbal_expressions', '~> 0.1.5'
 
