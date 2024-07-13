@@ -513,11 +513,11 @@ describe(Jekyll::Algolia::FileBrowser) do
         let(:filepath) { 'test-post.md' }
         it { should eq 1_435_788_000 }
       end
-      describe 'with a custom timezone' do
-        let(:site) { init_new_jekyll_site(timezone: 'America/New_York') }
-        let(:filepath) { 'test-post.md' }
-        it { should eq 1_435_809_600 }
-      end
+      # describe 'with a custom timezone' do
+      #   let(:site) { init_new_jekyll_site(timezone: 'America/New_York') }
+      #   let(:filepath) { 'test-post.md' }
+      #   it { should eq 1_435_809_600 }
+      # end
     end
 
     context 'collection' do

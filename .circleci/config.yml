@@ -1,0 +1,18 @@
+version: 2.1
+
+executors:
+  default:
+    docker:
+      - image: cimg/ruby:3.3.4
+
+jobs:
+  test:
+    executor: default
+    steps:
+      - checkout
+      - run: bundle exec rake test
+
+workflows:
+  main:
+    jobs:
+      - test

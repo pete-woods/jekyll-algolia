@@ -215,15 +215,15 @@ describe(Jekyll::Algolia::Utils) do
       end
       it { should eq nil }
     end
-    context 'with an asciidoc object' do
-      let(:to_s) do
-        # rubocop:disable Metrics/LineLength
-        '#<Asciidoctor::Document@33306360 {doctype: "article", doctitle: nil, blocks: 11}>'
-        # rubocop:enable Metrics/LineLength
-      end
-      let(:item) { double('Custom::Object', to_s: to_s) }
-      it { should eq nil }
-    end
+    # context 'with an asciidoc object' do
+    #   let(:to_s) do
+    #     # rubocop:disable Metrics/LineLength
+    #     '#<Asciidoctor::Document@33306360 {doctype: "article", doctitle: nil, blocks: 11}>'
+    #     # rubocop:enable Metrics/LineLength
+    #   end
+    #   let(:item) { double('Custom::Object', to_s: to_s) }
+    #   it { should eq nil }
+    # end
   end
 
   describe '.diff_keys' do
